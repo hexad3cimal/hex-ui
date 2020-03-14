@@ -1,0 +1,64 @@
+@import "../mixins/button";
+@import "../mixins/hover";
+@import "../constants/colors";
+
+.btn {
+  text-align: center;
+  word-break: keep-all;
+  margin: .5rem;
+  background: white;
+  -webkit-box-shadow: 0px 2px 2px -1px rgba(23, 19, 23, 0.73);
+  -moz-box-shadow: 0px 2px 2px -1px rgba(23, 19, 23, 0.73);
+  box-shadow: 0px 2px 2px -1px rgba(23, 19, 23, 0.73);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  font-family: 'Quicksand', sans-serif;
+}
+
+.btn.blue.sm {
+  @include button("blue", "s");
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  &:hover {
+    color: white;
+    background: $blue;
+    text-shadow: .3vmin .3vmin 0 #E79C10, -.3vmin -.3vmin 0 #D53A33;
+
+  }
+}
+
+.btn.red.sm {
+  @include button("red", "s");
+
+  &:hover {
+    color: white;
+    background: $red;
+    text-shadow: .3vmin .3vmin 0 #E79C10, -.3vmin -.3vmin 0 #104811;
+
+  }
+}
+
+.btn.green.sm {
+  @include button("green", "s");
+
+  &:hover {
+    color: white;
+    background: $green;
+    text-shadow: .3vmin .3vmin 0 #E79C10, -.3vmin -.3vmin 0 #D53A33;
+
+  }
+}
+
+.btn.yellow.sm {
+  @include button("yellow", "s");
+
+  &:hover {
+    color: white;
+    background: $yellow;
+    text-shadow: .3vmin .3vmin 0 #2850f8, -.3vmin -.3vmin 0 #D53A33;
+
+  }
+}

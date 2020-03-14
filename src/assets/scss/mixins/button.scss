@@ -1,0 +1,38 @@
+@import "../constants/colors";
+$color: (
+        "blue":$blue,
+        "red":$red,
+        "green":$green,
+        "orange":$orange,
+        "yellow":$yellow
+);
+
+$button-width: (
+        "xs":3rem,
+        "s":5rem,
+        "m":7rem
+);
+
+$button-height: (
+        "xs":1rem,
+        "s":2rem,
+        "m":3rem
+);
+
+
+@mixin button($color-code, $type) {
+  @if map_has_key($color, $color-code) {
+    border: solid .5px map_get($color, $color-code);
+    color: map_get($color, $color-code);
+  }
+  @if map_has_key($button-width, $type) {
+    width: map_get($button-width, $type);
+  }
+  @if map_has_key($button-height, $type) {
+    height: map_get($button-height, $type);
+  }
+  :hover {background: map_get($color, $color-code)}
+
+
+}
+

@@ -1,0 +1,9 @@
+@mixin hover-apply {
+  &:hover {
+      @content;
+  }
+  &:active {
+      @content;
+
+  }
+}
