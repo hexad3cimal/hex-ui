@@ -1,0 +1,21 @@
+.sidebar-ul{
+  margin-top: 1.5rem;
+  display: block;
+
+  .side-menu-item{
+  line-height: 1.4rem;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: white;
+    transition: all 3ms ease-in;
+    padding: 1rem;
+    margin: 1rem;
+    &.active{
+      border-radius: 20px;
+      background-color: white;
+      color: black;
+    }
+  }
+}
+

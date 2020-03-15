@@ -1,6 +1,7 @@
 @import "button/index";
 @import "cards/index";
 @import "input/index";
+@import "menu/sidebar";
 
 .wrapper {
   width: 100vw;
@@ -39,7 +40,7 @@
   display: grid;
   grid-column: span 10;
   height: 100vh;
-  border-radius: 15px 0 0 15px;
+  border-radius: 20px 0 0 20px;
   border-left: 2px solid #FFFDFD;
   background: #FFFDFD;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

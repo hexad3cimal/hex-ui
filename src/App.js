@@ -6,6 +6,11 @@ function App() {
         <div className="wrapper">
             <div className="side-bar">
                 Sidebar
+                <div className="sidebar-ul">
+                    <div className="side-menu-item">
+                        Home
+                    </div>
+                </div>
             </div>
             <div className="main-content">
                 <div className="container">
