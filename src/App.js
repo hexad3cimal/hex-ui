@@ -22,6 +22,12 @@ function App() {
                         <label className={"lb"}> Test</label>
                         <input className="input blue" />
                     </div>
+                    <div className={"input-group"}>
+                        <div className={"float-label"}>
+                        <input id="name" name="name" type="text" required />
+                            <label htmlFor="name">Your Name</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
